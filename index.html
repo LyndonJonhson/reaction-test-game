@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de tempo de reação</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a9aa051110.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Teste - Tempo de Reação</h1>
+    </header>
+    <div id="areaDados">
+        <div id="containerComandos">
+            <h3>Comandos:</h3>
+            <div id="setas">
+                <i class="fa-solid fa-square-caret-up" style="color: #dfdf04;"></i><br>
+                <i class="fa-solid fa-square-caret-left" style="color: #ff0000;"></i>
+                <i class="fa-solid fa-square-caret-down" style="color: #008000;"></i>
+                <i class="fa-solid fa-square-caret-right" style="color: #2419c2;"></i>
+            </div>
+            <p><span id="espaco">Espaço</span> Inicia/Para o jogo</p>
+        </div>
+        <div id="containerTempo">
+            <p>Tempo de Reação: <span id="tempoReacao">0</span>s</p>
+            <p>Média: <span id="mediaReacao">0</span>s</p>
+        </div>
+        <div id="containerPontuacao">
+            <p>Acertos: <span id="acertos">0</span></p>
+            <p>Erros: <span id="erros">0</span></p>
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+    </div>
+    <div id="telaJogo" onkeydown="comandos()">
+        <div id="circulo"></div>
+    </div>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/LyndonJonhson" target="_blank">Lyndon Jonhson</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
